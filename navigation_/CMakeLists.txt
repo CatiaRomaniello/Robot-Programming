@@ -9,6 +9,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -17,8 +19,12 @@ find_package(nav_msgs REQUIRED)
 add_executable(pub_occupancy_grid src/pub_occupancy_grid.cpp)
 ament_target_dependencies(pub_occupancy_grid rclcpp nav_msgs)
 
+add_executable(laserScan_ src/laser_scan.cpp)
+ament_target_dependencies(laserScan_ rclcpp std_msgs sensor_msgs)
+
 install(TARGETS
   pub_occupancy_grid
+  laserScan_
   DESTINATION lib/${PROJECT_NAME})
 
 
