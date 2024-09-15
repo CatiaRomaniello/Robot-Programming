@@ -11,6 +11,7 @@ find_package(rclcpp REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
@@ -22,9 +23,13 @@ ament_target_dependencies(pub_occupancy_grid rclcpp nav_msgs)
 add_executable(laserScan_ src/laser_scan.cpp)
 ament_target_dependencies(laserScan_ rclcpp std_msgs sensor_msgs)
 
+add_executable(mobile_base src/mobile_base.cpp)
+ament_target_dependencies(mobile_base rclcpp nav_msgs tf2)
+
 install(TARGETS
   pub_occupancy_grid
   laserScan_
+  mobile_base
   DESTINATION lib/${PROJECT_NAME})
 
 
