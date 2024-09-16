@@ -7,6 +7,10 @@
 #include "rclcpp/rclcpp.hpp"
 #include "nav_msgs/msg/odometry.hpp" 
 #include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/transform_broadcaster.h"
+#include "geometry_msgs/msg/transform_stamped.hpp"
+#include "visualization_msgs/msg/marker.hpp"
+
 
 using namespace std::chrono_literals;
 
@@ -20,7 +24,8 @@ class MobileBasePublisher : public rclcpp::Node
     {
       base_publisher = this->create_publisher<nav_msgs::msg::Odometry>("base_pub", 10);
       base_timer= this->create_wall_timer(500ms, std::bind(&MobileBasePublisher::base_callback,this));
-
+      tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this); 
+      marker_publisher = this->create_publisher<visualization_msgs::msg::Marker>("visualization_marker", 10);
       
     }
 
@@ -36,7 +41,9 @@ class MobileBasePublisher : public rclcpp::Node
 
       auto odom_msg = nav_msgs::msg::Odometry();
       odom_msg.header.stamp = this->get_clock()->now();
-      odom_msg.header.frame_id = "map_frame1";
+      odom_msg.header.frame_id = "odom";
+
+      odom_msg.child_frame_id = "base_link";
 
       odom_msg.pose.pose.position.x = x_;
       odom_msg.pose.pose.position.y = y_;
@@ -54,12 +61,60 @@ class MobileBasePublisher : public rclcpp::Node
 
       base_publisher->publish(odom_msg);
 
+      auto transform_stamped = geometry_msgs::msg::TransformStamped();
+      transform_stamped.header.stamp = this->get_clock()->now();
+      transform_stamped.header.frame_id = "odom";
+
+      transform_stamped.child_frame_id = "base_link";
+
+      transform_stamped.transform.translation.x = x_;
+      transform_stamped.transform.translation.y = y_;
+      transform_stamped.transform.translation.z = 0.0;
+      transform_stamped.transform.rotation.x = q.x();
+      transform_stamped.transform.rotation.y = q.y();
+      transform_stamped.transform.rotation.z = q.z();
+      transform_stamped.transform.rotation.w = q.w();
+
+      tf_broadcaster_->sendTransform(transform_stamped);
+
       RCLCPP_INFO(this->get_logger(), "Odom: x=%.2f, y=%.2f, theta=%.2f", x_, y_, theta_);
+      publish_marker();
     }
     
+    void publish_marker()
+{
+    visualization_msgs::msg::Marker marker;
+    marker.header.frame_id = "base_link";  // Fai in modo che il cerchio sia associato al robot
+    marker.header.stamp = this->get_clock()->now();
+    marker.ns = "robot_shape";
+    marker.id = 0;
+    marker.type = visualization_msgs::msg::Marker::CYLINDER;  // Un cerchio visto dall'alto
+    marker.action = visualization_msgs::msg::Marker::ADD;
+    
+    marker.pose.position.x = 0.0;
+    marker.pose.position.y = 0.0;
+    marker.pose.position.z = 0.0;
+    marker.pose.orientation.x = 0.0;
+    marker.pose.orientation.y = 0.0;
+    marker.pose.orientation.z = 0.0;
+    marker.pose.orientation.w = 1.0;
+
+    marker.scale.x = 0.5;  // Diametro del cerchio
+    marker.scale.y = 0.5;
+    marker.scale.z = 0.1;  // Altezza del cilindro
+
+    marker.color.a = 1.0;  // Trasparenza
+    marker.color.r = 0.0;
+    marker.color.g = 1.0;
+    marker.color.b = 0.0;  // Verde
+
+    marker_publisher->publish(marker);
+}
     double x_, y_, theta_, v_, w_;
     rclcpp::TimerBase::SharedPtr base_timer;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr base_publisher;
+    rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_publisher;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 };
 
 int main(int argc, char * argv[])
