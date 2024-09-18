@@ -9,6 +9,7 @@
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_ros/transform_broadcaster.h"
 #include "geometry_msgs/msg/transform_stamped.hpp"
+
 #include "visualization_msgs/msg/marker.hpp"
 
 
@@ -79,16 +80,19 @@ class MobileBasePublisher : public rclcpp::Node
 
       RCLCPP_INFO(this->get_logger(), "Odom: x=%.2f, y=%.2f, theta=%.2f", x_, y_, theta_);
       publish_marker();
+      publish_marker();
+      RCLCPP_INFO(this->get_logger(), "Odom: x=%.2f, y=%.2f, theta=%.2f", x_, y_, theta_);
+      
     }
     
     void publish_marker()
 {
     visualization_msgs::msg::Marker marker;
-    marker.header.frame_id = "base_link";  // Fai in modo che il cerchio sia associato al robot
+    marker.header.frame_id = "base_link";  
     marker.header.stamp = this->get_clock()->now();
     marker.ns = "robot_shape";
     marker.id = 0;
-    marker.type = visualization_msgs::msg::Marker::CYLINDER;  // Un cerchio visto dall'alto
+    marker.type = visualization_msgs::msg::Marker::CYLINDER;  
     marker.action = visualization_msgs::msg::Marker::ADD;
     
     marker.pose.position.x = 0.0;

@@ -24,15 +24,19 @@ add_executable(pub_occupancy_grid src/pub_occupancy_grid.cpp)
 ament_target_dependencies(pub_occupancy_grid rclcpp nav_msgs tf2 tf2_ros geometry_msgs)
 
 add_executable(laserScan_ src/laser_scan.cpp)
-ament_target_dependencies(laserScan_ rclcpp std_msgs sensor_msgs tf2_ros geometry_msgs)
+ament_target_dependencies(laserScan_ rclcpp std_msgs sensor_msgs tf2 tf2_ros geometry_msgs)
 
 add_executable(mobile_base src/mobile_base.cpp)
 ament_target_dependencies(mobile_base rclcpp nav_msgs tf2 tf2_ros geometry_msgs visualization_msgs)
+
+add_executable(tf_node src/tf_node.cpp)
+ament_target_dependencies(tf_node rclcpp nav_msgs tf2 tf2_ros geometry_msgs)
 
 install(TARGETS
   pub_occupancy_grid
   laserScan_
   mobile_base
+  tf_node
   DESTINATION lib/${PROJECT_NAME})
 
 
