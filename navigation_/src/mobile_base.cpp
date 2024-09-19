@@ -9,6 +9,7 @@
 #include "tf2/LinearMath/Quaternion.h"
 #include "tf2_ros/transform_broadcaster.h"
 #include "geometry_msgs/msg/transform_stamped.hpp"
+#include "geometry_msgs/msg/twist.hpp"
 
 #include "visualization_msgs/msg/marker.hpp"
 
@@ -21,16 +22,25 @@ class MobileBasePublisher : public rclcpp::Node
 {
   public:
     MobileBasePublisher()
-    : Node("mobile_base_publisher"), x_(0.0), y_(0.0), theta_(0.0), v_(1.0), w_(0.1)
+    : Node("mobile_base_publisher"), x_(0.0), y_(0.0), theta_(0.0), v_(0.0), w_(0.0)
     {
-      base_publisher = this->create_publisher<nav_msgs::msg::Odometry>("base_pub", 10);
+      base_publisher = this->create_publisher<nav_msgs::msg::Odometry>("odom", 10);
       base_timer= this->create_wall_timer(500ms, std::bind(&MobileBasePublisher::base_callback,this));
       tf_broadcaster_ = std::make_shared<tf2_ros::TransformBroadcaster>(this); 
       marker_publisher = this->create_publisher<visualization_msgs::msg::Marker>("visualization_marker", 10);
+
+      cmd_vel_subscriber = this->create_subscription<geometry_msgs::msg::Twist>(
+      "cmd_vel", 10, std::bind(&MobileBasePublisher::cmd_vel_callback, this, std::placeholders::_1));
       
     }
 
   private:
+
+    void cmd_vel_callback(const geometry_msgs::msg::Twist::SharedPtr msg)
+      {
+        v_ = msg->linear.x; 
+        w_ = msg->angular.z; 
+    }
     void base_callback()
     {
 
@@ -80,8 +90,7 @@ class MobileBasePublisher : public rclcpp::Node
 
       RCLCPP_INFO(this->get_logger(), "Odom: x=%.2f, y=%.2f, theta=%.2f", x_, y_, theta_);
       publish_marker();
-      publish_marker();
-      RCLCPP_INFO(this->get_logger(), "Odom: x=%.2f, y=%.2f, theta=%.2f", x_, y_, theta_);
+     
       
     }
     
@@ -118,6 +127,7 @@ class MobileBasePublisher : public rclcpp::Node
     rclcpp::TimerBase::SharedPtr base_timer;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr base_publisher;
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr marker_publisher;
+    rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_subscriber;
     std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 };
 
