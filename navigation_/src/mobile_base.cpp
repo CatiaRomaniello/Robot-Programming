@@ -90,7 +90,7 @@ class MobileBasePublisher : public rclcpp::Node
 
       RCLCPP_INFO(this->get_logger(), "Odom: x=%.2f, y=%.2f, theta=%.2f", x_, y_, theta_);
       publish_marker();
-     
+      publish_map_to_odom();
       
     }
     
@@ -112,9 +112,9 @@ class MobileBasePublisher : public rclcpp::Node
     marker.pose.orientation.z = 0.0;
     marker.pose.orientation.w = 1.0;
 
-    marker.scale.x = 0.5;  // Diametro del cerchio
+    marker.scale.x = 0.5;  
     marker.scale.y = 0.5;
-    marker.scale.z = 0.1;  // Altezza del cilindro
+    marker.scale.z = 0.1; 
 
     marker.color.a = 1.0;  // Trasparenza
     marker.color.r = 0.0;
@@ -123,6 +123,26 @@ class MobileBasePublisher : public rclcpp::Node
 
     marker_publisher->publish(marker);
 }
+void publish_map_to_odom() {
+      geometry_msgs::msg::TransformStamped map_to_odom;
+      map_to_odom.header.stamp = this->get_clock()->now();
+      map_to_odom.header.frame_id = "map";
+      map_to_odom.child_frame_id = "odom";
+
+      map_to_odom.transform.translation.x = 0.0;
+      map_to_odom.transform.translation.y = 0.0;
+      map_to_odom.transform.translation.z = 0.0;
+
+      tf2::Quaternion q;
+      q.setRPY(0, 0, 0);  
+      map_to_odom.transform.rotation.x = q.x();
+      map_to_odom.transform.rotation.y = q.y();
+      map_to_odom.transform.rotation.z = q.z();
+      map_to_odom.transform.rotation.w = q.w();
+
+      
+      tf_broadcaster_->sendTransform(map_to_odom);
+    }
     double x_, y_, theta_, v_, w_;
     rclcpp::TimerBase::SharedPtr base_timer;
     rclcpp::Publisher<nav_msgs::msg::Odometry>::SharedPtr base_publisher;
