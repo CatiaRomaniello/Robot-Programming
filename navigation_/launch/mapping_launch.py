@@ -14,28 +14,15 @@ def generate_launch_description():
     print(f"Param file path: {param_file}")
 
     return LaunchDescription([
-        Node(
-            package='rviz2',
-            executable='rviz2',
-            name='rviz2',
-            arguments=['-d', '/home/catia/ros2_ws/src/navigation_/config/diag.rviz'],
-            output='screen'
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource(
+                os.path.join(get_package_share_directory('nav2_bringup'), 'launch', 'bringup_launch.py')
+            ),
+            launch_arguments={'use_sim_time': 'false', 'params_file': param_file,
+            'map': map_file
+            }.items()
         ),
-        #IncludeLaunchDescription(
-        #    PythonLaunchDescriptionSource([get_package_share_directory('nav2_bringup'),'/launch','/bringup_launch.py']),
-        #    launch_arguments={
-        #    'map':map_file,
-        #    'params_file': param_file}.items(),
-        #),
-        #Node(
-        #    package='nav2_map_server',
-        #    executable='map_server',
-        #    name='map_server',
-        #    output='screen',
-        #    parameters=[{
-        #        'yaml_filename': map_file
-        #    }]
-        #),
+       
         #LifecycleNode(
         #    package="nav2_map_server",
         #    executable="map_server",
@@ -52,18 +39,34 @@ def generate_launch_description():
         #    parameters=[{"autostart": True},  
         #                {"node_names": ["map_server"]}]
         #),
-        Node(
-            package='nav2_amcl',
-            executable='amcl',
-            name='amcl',
-            output='screen',
-            parameters=[param_file],
-        ),
-
+        
+        #Node(
+        #    package='nav2_recoveries',
+        #    executable='recoveries_server',
+        #    name='recoveries_server',
+        #    output='screen',
+        #    parameters=[param_file],
+        #    ),
+        #Node(
+        #    package='nav2_waypoint_follower',
+        #    executable='waypoint_follower',
+        #    name='waypoint_follower',
+        #    output='screen',
+        #    parameters=[configured_params],
+        #),
+        #Node(
+        #    package="nav2_lifecycle_manager",
+        #    executable="lifecycle_manager",
+        #    name="lifecycle_manager_mapper",
+        #    output="screen",
+        #    parameters=[{"autostart": True},  
+        #                {"node_names": ["map_server"]}]
+        #),
+        
         Node(
             package='navigation_',
             executable='laserScan_',
-            name='laser_scan',
+            name='laserScan_',
             output='screen'
         ),
 
@@ -73,18 +76,18 @@ def generate_launch_description():
             name='mobile_base',
             output='screen'
         ),
-
-        Node(
-            package='navigation_',
-            executable='tf_node',
-            name='tf_node',
-            output='screen'
-        ),
         Node(
             package='navigation_',
             executable='ipose',
             name='ipose',
             output='screen'
         ),
-        
+        Node(
+            package='rviz2',
+            executable='rviz2',
+            name='rviz2_node',
+            arguments=['-d', '/home/catia/ros2_ws/src/navigation_/config/diag1.rviz'],
+            output='screen'
+        ),
+    
     ])

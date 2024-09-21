@@ -8,13 +8,11 @@ public:
     NavigationNode()
         : Node("navigation_node")
     {
-        
         goal_publisher_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("/move_base/goal", 10);
 
         initialpose_subscription_ = this->create_subscription<geometry_msgs::msg::PoseWithCovarianceStamped>(
             "/initialpose", 10, std::bind(&NavigationNode::initialpose_callback, this, std::placeholders::_1));
 
-        
         goal_subscription_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "/move_base_simple/goal", 10, std::bind(&NavigationNode::goal_callback, this, std::placeholders::_1));
 
@@ -22,30 +20,34 @@ public:
     }
 
 private:
-    
     void initialpose_callback(const geometry_msgs::msg::PoseWithCovarianceStamped::SharedPtr msg)
     {
         RCLCPP_INFO(this->get_logger(), "Received /initialpose: [x: %f, y: %f, orientation: %f]",
                     msg->pose.pose.position.x, msg->pose.pose.position.y, msg->pose.pose.orientation.w);
-
     }
 
-    
     void goal_callback(const geometry_msgs::msg::PoseStamped::SharedPtr msg)
     {
         RCLCPP_INFO(this->get_logger(), "Received /move_base_simple/goal: [x: %f, y: %f, orientation: %f]",
                     msg->pose.position.x, msg->pose.position.y, msg->pose.orientation.w);
 
-       
-        goal_publisher_->publish(*msg);
+        
+        RCLCPP_INFO(this->get_logger(), "Publishing goal to /move_base/goal");
+        
+        
+        if (this->now() - msg->header.stamp < rclcpp::Duration(1, 0)) {
+            goal_publisher_->publish(*msg);
+        } else {
+            RCLCPP_WARN(this->get_logger(), "Received goal with outdated timestamp.");
+        }
     }
 
-    
     rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr goal_publisher_;
 
-   
+    
     rclcpp::Subscription<geometry_msgs::msg::PoseWithCovarianceStamped>::SharedPtr initialpose_subscription_;
 
+   
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr goal_subscription_;
 };
 
@@ -56,3 +58,4 @@ int main(int argc, char **argv)
     rclcpp::shutdown();
     return 0;
 }
+
