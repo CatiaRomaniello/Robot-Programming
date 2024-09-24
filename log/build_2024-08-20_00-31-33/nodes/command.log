@@ -1,2 +1,0 @@
-Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8
-Invoked command in '/home/catia/ros2_ws/build/nodes' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8

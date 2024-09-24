@@ -1,2 +1,0 @@
-Invoking command in '/home/catia/ros2_ws/build/sam_bot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/sam_bot_description -- -j8 -l8
-Invoked command in '/home/catia/ros2_ws/build/sam_bot_description' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/sam_bot_description -- -j8 -l8

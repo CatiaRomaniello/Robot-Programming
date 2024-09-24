@@ -1,7 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
-[ 50%] Built target pub_occupancy_grid
-[ 50%] Built target laserScan_
-[ 62%] [32mBuilding CXX object CMakeFiles/mobile_base.dir/src/mobile_base.cpp.o[0m
-[ 75%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
-[ 87%] [32m[1mLinking CXX executable mobile_base[0m
-[ 87%] Built target mobile_base

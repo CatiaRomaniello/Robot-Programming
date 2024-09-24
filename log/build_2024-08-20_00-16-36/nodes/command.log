@@ -1,6 +1,0 @@
-Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/catia/ros2_ws/src/nodes -DCMAKE_INSTALL_PREFIX=/home/catia/ros2_ws/install/nodes
-Invoked command in '/home/catia/ros2_ws/build/nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/catia/ros2_ws/src/nodes -DCMAKE_INSTALL_PREFIX=/home/catia/ros2_ws/install/nodes
-Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8
-Invoked command in '/home/catia/ros2_ws/build/nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8
-Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/nodes
-Invoked command in '/home/catia/ros2_ws/build/nodes' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/nodes

@@ -1,4 +1,0 @@
-[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In member function ‘[01m[Kvoid TransformBroadcasterNode::base_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:42:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-   42 |     void base_callback([01;35m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K) {
-      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

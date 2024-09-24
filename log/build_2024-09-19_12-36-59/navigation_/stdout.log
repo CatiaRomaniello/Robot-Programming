@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target mobile_base[0m
-[ 37%] [32mBuilding CXX object CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o[0m
-[ 37%] Built target laserScan_
-[ 75%] Built target tf_node
-[ 87%] Built target mobile_base

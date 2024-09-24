@@ -1,5 +1,0 @@
-[0.008s] Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8
-[0.021s] [0mCMake Error: The source directory "/home/catia/ros2_ws/src/nodes" does not appear to contain CMakeLists.txt.
-[0.022s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.022s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
-[0.023s] Invoked command in '/home/catia/ros2_ws/build/nodes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8

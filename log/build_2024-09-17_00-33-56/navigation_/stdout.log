@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target laserScan_[0m
-[ 66%] Built target pub_occupancy_grid
-[ 66%] Built target mobile_base
-[ 83%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m

@@ -1,5 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target sub_node[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/publisher.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/sub_node.dir/src/subscriber.cpp.o[0m
-[ 75%] [32m[1mLinking CXX executable sub_node[0m
-[ 75%] Built target sub_node
