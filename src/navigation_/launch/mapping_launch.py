@@ -6,10 +6,10 @@ from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 def generate_launch_description():
-    config_dir = '/home/catia/ros2_ws/src/navigation_/config'
+    config_dir = os.path.join(get_package_share_directory('navigation_'), 'config')
     map_file = os.path.join(config_dir,'cappero_laser_odom_diag_2020-05-06-16-26-03.yaml')
     param_file = os.path.join(config_dir,'nav2_param.yaml')
-
+    rviz_file = os.path.join(config_dir,'diag2.rviz')
 
     return LaunchDescription([
         IncludeLaunchDescription(
@@ -43,7 +43,7 @@ def generate_launch_description():
             package='rviz2',
             executable='rviz2',
             name='rviz2_node',
-            arguments=['-d', '/home/catia/ros2_ws/src/navigation_/config/diag.rviz'],
+            arguments=['-d', rviz_file],
             output='screen'
         ),
     

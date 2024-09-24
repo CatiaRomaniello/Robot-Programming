@@ -1,4 +1,4 @@
-image:           /home/catia/ros2_ws/src/navigation_/config/cappero_laser_odom_diag_2020-05-06-16-26-03.png
+image:           cappero_laser_odom_diag_2020-05-06-16-26-03.png
 resolution:      0.05
 origin:          [ 0.0,  0.0, 0.0 ]
 occupied_thresh: 0.8
