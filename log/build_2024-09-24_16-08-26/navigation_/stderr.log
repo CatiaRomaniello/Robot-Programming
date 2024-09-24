@@ -1,0 +1,13 @@
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:[m[K In constructor ‘[01m[KMobileBasePublisher::MobileBasePublisher()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:34:7:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kbase_timer[m[K’?
+   34 |       [01;31m[Klast_time[m[K = this->get_clock()->now();
+      |       [01;31m[K^~~~~~~~~[m[K
+      |       [32m[Kbase_timer[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:[m[K In member function ‘[01m[Kvoid MobileBasePublisher::base_callback()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:49:35:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_time[m[K’ was not declared in this scope; did you mean ‘[01m[Kbase_timer[m[K’?
+   49 |       double dt = (current_time - [01;31m[Klast_time[m[K).seconds();
+      |                                   [01;31m[K^~~~~~~~~[m[K
+      |                                   [32m[Kbase_timer[m[K
+gmake[2]: *** [CMakeFiles/mobile_base.dir/build.make:76: CMakeFiles/mobile_base.dir/src/mobile_base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/mobile_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

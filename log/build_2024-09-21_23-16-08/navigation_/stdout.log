@@ -1,0 +1,5 @@
+[ 30%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m
+[ 50%] Built target pub_occupancy_grid
+[ 50%] Built target tf_node
+[ 70%] Built target ipose
+[ 90%] Built target mobile_base

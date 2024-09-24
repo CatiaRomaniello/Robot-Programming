@@ -1,0 +1,123 @@
+[0.000000] (-) TimerEvent: {}
+[0.000207] (navigation_) JobQueued: {'identifier': 'navigation_', 'dependencies': OrderedDict()}
+[0.000254] (navigation_) JobStarted: {'identifier': 'navigation_'}
+[0.008489] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'cmake'}
+[0.009339] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'build'}
+[0.009898] (navigation_) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/catia/ros2_ws/build/navigation_', '--', '-j8', '-l8'], 'cwd': '/home/catia/ros2_ws/build/navigation_', 'env': OrderedDict([('USER', 'catia'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/catia'), ('OLDPWD', '/home/catia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '1711'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/catia/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'catia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'catia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cat:@/tmp/.ICE-unix/1518,unix/cat:/tmp/.ICE-unix/1518'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c80c7160_7ffc_4689_993c_620d695746e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LX02T2'), ('GNOME_TERMINAL_SERVICE', ':1.144'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/catia/ros2_ws/build/navigation_'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble')]), 'shell': False}
+[0.098928] (-) TimerEvent: {}
+[0.102106] (navigation_) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target laserScan_\x1b[0m\n'}
+[0.125707] (navigation_) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/mobile_base.dir/src/mobile_base.cpp.o\x1b[0m\n'}
+[0.125943] (navigation_) StdoutLine: {'line': b'[ 62%] Built target pub_occupancy_grid\n'}
+[0.126048] (navigation_) StdoutLine: {'line': b'[ 62%] Built target laserScan_\n'}
+[0.126143] (navigation_) StdoutLine: {'line': b'[ 87%] Built target tf_node\n'}
+[0.199068] (-) TimerEvent: {}
+[0.299389] (-) TimerEvent: {}
+[0.399647] (-) TimerEvent: {}
+[0.499971] (-) TimerEvent: {}
+[0.600311] (-) TimerEvent: {}
+[0.700642] (-) TimerEvent: {}
+[0.800977] (-) TimerEvent: {}
+[0.901320] (-) TimerEvent: {}
+[1.001622] (-) TimerEvent: {}
+[1.101929] (-) TimerEvent: {}
+[1.202260] (-) TimerEvent: {}
+[1.302548] (-) TimerEvent: {}
+[1.402832] (-) TimerEvent: {}
+[1.503145] (-) TimerEvent: {}
+[1.603415] (-) TimerEvent: {}
+[1.703754] (-) TimerEvent: {}
+[1.804116] (-) TimerEvent: {}
+[1.904453] (-) TimerEvent: {}
+[2.004822] (-) TimerEvent: {}
+[2.105088] (-) TimerEvent: {}
+[2.205498] (-) TimerEvent: {}
+[2.305780] (-) TimerEvent: {}
+[2.406120] (-) TimerEvent: {}
+[2.506480] (-) TimerEvent: {}
+[2.606905] (-) TimerEvent: {}
+[2.707278] (-) TimerEvent: {}
+[2.807682] (-) TimerEvent: {}
+[2.908151] (-) TimerEvent: {}
+[3.008435] (-) TimerEvent: {}
+[3.108741] (-) TimerEvent: {}
+[3.209096] (-) TimerEvent: {}
+[3.309447] (-) TimerEvent: {}
+[3.409783] (-) TimerEvent: {}
+[3.510114] (-) TimerEvent: {}
+[3.610485] (-) TimerEvent: {}
+[3.710854] (-) TimerEvent: {}
+[3.811182] (-) TimerEvent: {}
+[3.911570] (-) TimerEvent: {}
+[4.011919] (-) TimerEvent: {}
+[4.112262] (-) TimerEvent: {}
+[4.212605] (-) TimerEvent: {}
+[4.312952] (-) TimerEvent: {}
+[4.413307] (-) TimerEvent: {}
+[4.513674] (-) TimerEvent: {}
+[4.613956] (-) TimerEvent: {}
+[4.714315] (-) TimerEvent: {}
+[4.814700] (-) TimerEvent: {}
+[4.915031] (-) TimerEvent: {}
+[5.015370] (-) TimerEvent: {}
+[5.115698] (-) TimerEvent: {}
+[5.216037] (-) TimerEvent: {}
+[5.316416] (-) TimerEvent: {}
+[5.416783] (-) TimerEvent: {}
+[5.517279] (-) TimerEvent: {}
+[5.617588] (-) TimerEvent: {}
+[5.717940] (-) TimerEvent: {}
+[5.818286] (-) TimerEvent: {}
+[5.918610] (-) TimerEvent: {}
+[6.018922] (-) TimerEvent: {}
+[6.119285] (-) TimerEvent: {}
+[6.219538] (-) TimerEvent: {}
+[6.319850] (-) TimerEvent: {}
+[6.420142] (-) TimerEvent: {}
+[6.520450] (-) TimerEvent: {}
+[6.620776] (-) TimerEvent: {}
+[6.721090] (-) TimerEvent: {}
+[6.821386] (-) TimerEvent: {}
+[6.921679] (-) TimerEvent: {}
+[7.021979] (-) TimerEvent: {}
+[7.122257] (-) TimerEvent: {}
+[7.222529] (-) TimerEvent: {}
+[7.322805] (-) TimerEvent: {}
+[7.423079] (-) TimerEvent: {}
+[7.523401] (-) TimerEvent: {}
+[7.623714] (-) TimerEvent: {}
+[7.724005] (-) TimerEvent: {}
+[7.764684] (navigation_) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable mobile_base\x1b[0m\n'}
+[7.824143] (-) TimerEvent: {}
+[7.924531] (-) TimerEvent: {}
+[8.024876] (-) TimerEvent: {}
+[8.125200] (-) TimerEvent: {}
+[8.225537] (-) TimerEvent: {}
+[8.258650] (navigation_) StdoutLine: {'line': b'[100%] Built target mobile_base\n'}
+[8.267665] (navigation_) CommandEnded: {'returncode': 0}
+[8.293233] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'install'}
+[8.299890] (navigation_) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/catia/ros2_ws/build/navigation_'], 'cwd': '/home/catia/ros2_ws/build/navigation_', 'env': OrderedDict([('USER', 'catia'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/catia'), ('OLDPWD', '/home/catia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '1711'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/catia/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'catia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'catia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cat:@/tmp/.ICE-unix/1518,unix/cat:/tmp/.ICE-unix/1518'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c80c7160_7ffc_4689_993c_620d695746e8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.LX02T2'), ('GNOME_TERMINAL_SERVICE', ':1.144'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/catia/ros2_ws/build/navigation_'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble')]), 'shell': False}
+[8.306619] (navigation_) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.307723] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/pub_occupancy_grid\n'}
+[8.308589] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/laserScan_\n'}
+[8.309365] (navigation_) StdoutLine: {'line': b'-- Installing: /home/catia/ros2_ws/install/navigation_/lib/navigation_/mobile_base\n'}
+[8.313926] (navigation_) StdoutLine: {'line': b'-- Set runtime path of "/home/catia/ros2_ws/install/navigation_/lib/navigation_/mobile_base" to ""\n'}
+[8.314420] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/tf_node\n'}
+[8.314497] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/package_run_dependencies/navigation_\n'}
+[8.314565] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/parent_prefix_path/navigation_\n'}
+[8.314642] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/ament_prefix_path.sh\n'}
+[8.314725] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/ament_prefix_path.dsv\n'}
+[8.314791] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/path.sh\n'}
+[8.314837] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/path.dsv\n'}
+[8.314882] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.bash\n'}
+[8.314926] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.sh\n'}
+[8.314972] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.zsh\n'}
+[8.315019] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.dsv\n'}
+[8.315065] (navigation_) StdoutLine: {'line': b'-- Installing: /home/catia/ros2_ws/install/navigation_/share/navigation_/package.dsv\n'}
+[8.315136] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/packages/navigation_\n'}
+[8.315184] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/cmake/navigation_Config.cmake\n'}
+[8.315239] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/cmake/navigation_Config-version.cmake\n'}
+[8.315288] (navigation_) StdoutLine: {'line': b'-- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/package.xml\n'}
+[8.316402] (navigation_) CommandEnded: {'returncode': 0}
+[8.325784] (-) TimerEvent: {}
+[8.363579] (navigation_) JobEnded: {'identifier': 'navigation_', 'rc': 0}
+[8.364098] (-) EventReactorShutdown: {}

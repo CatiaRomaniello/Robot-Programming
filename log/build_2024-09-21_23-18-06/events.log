@@ -1,0 +1,68 @@
+[0.000000] (-) TimerEvent: {}
+[0.000247] (navigation_) JobQueued: {'identifier': 'navigation_', 'dependencies': OrderedDict()}
+[0.000386] (navigation_) JobStarted: {'identifier': 'navigation_'}
+[0.006525] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'cmake'}
+[0.006992] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'build'}
+[0.007566] (navigation_) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/catia/ros2_ws/build/navigation_', '--', '-j8', '-l8'], 'cwd': '/home/catia/ros2_ws/build/navigation_', 'env': OrderedDict([('USER', 'catia'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/catia'), ('OLDPWD', '/home/catia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '1665'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/catia/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'catia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'catia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cat:@/tmp/.ICE-unix/1473,unix/cat:/tmp/.ICE-unix/1473'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/9b504845_b61d_4c56_b9de_3ac298f142a5'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.9XWAU2'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/catia/ros2_ws/build/navigation_'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble')]), 'shell': False}
+[0.044057] (navigation_) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target laserScan_\x1b[0m\n'}
+[0.054879] (navigation_) StdoutLine: {'line': b'[ 20%] Built target tf_node\n'}
+[0.055209] (navigation_) StdoutLine: {'line': b'[ 80%] Built target mobile_base\n'}
+[0.055518] (navigation_) StdoutLine: {'line': b'[ 80%] Built target pub_occupancy_grid\n'}
+[0.055615] (navigation_) StdoutLine: {'line': b'[ 80%] Built target ipose\n'}
+[0.061241] (navigation_) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o\x1b[0m\n'}
+[0.099260] (-) TimerEvent: {}
+[0.199585] (-) TimerEvent: {}
+[0.299928] (-) TimerEvent: {}
+[0.400246] (-) TimerEvent: {}
+[0.500579] (-) TimerEvent: {}
+[0.600842] (-) TimerEvent: {}
+[0.701183] (-) TimerEvent: {}
+[0.801513] (-) TimerEvent: {}
+[0.901852] (-) TimerEvent: {}
+[1.002170] (-) TimerEvent: {}
+[1.102496] (-) TimerEvent: {}
+[1.202828] (-) TimerEvent: {}
+[1.303152] (-) TimerEvent: {}
+[1.403492] (-) TimerEvent: {}
+[1.503826] (-) TimerEvent: {}
+[1.604122] (-) TimerEvent: {}
+[1.704470] (-) TimerEvent: {}
+[1.804810] (-) TimerEvent: {}
+[1.904756] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid LaserPublisher::laser_callback()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.904959] (-) TimerEvent: {}
+[1.905039] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:36:13:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krange\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kranges\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.905107] (navigation_) StderrLine: {'line': b'   36 |             \x1b[01;31m\x1b[Krange\x1b[m\x1b[K[i] = static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / 10.0));\n'}
+[1.905157] (navigation_) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.905202] (navigation_) StderrLine: {'line': b'      |             \x1b[32m\x1b[Kranges\x1b[m\x1b[K\n'}
+[1.910294] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:43:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle_min_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.910478] (navigation_) StderrLine: {'line': b'   43 |         scan_msg.angle_min = \x1b[01;31m\x1b[Kangle_min_\x1b[m\x1b[K;\n'}
+[1.910531] (navigation_) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.915548] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:44:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle_max_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.915692] (navigation_) StderrLine: {'line': b'   44 |         scan_msg.angle_max = \x1b[01;31m\x1b[Kangle_max_\x1b[m\x1b[K;\n'}
+[1.915744] (navigation_) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.923047] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:45:36:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kangle_increment_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.923258] (navigation_) StderrLine: {'line': b'   45 |         scan_msg.angle_increment = \x1b[01;31m\x1b[Kangle_increment_\x1b[m\x1b[K;\n'}
+[1.923310] (navigation_) StderrLine: {'line': b'      |                                    \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.928034] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:46:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmin_range_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.928235] (navigation_) StderrLine: {'line': b'   46 |         scan_msg.range_min = \x1b[01;31m\x1b[Kmin_range_\x1b[m\x1b[K;\n'}
+[1.928287] (navigation_) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.935354] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:47:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmax_range_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.935672] (navigation_) StderrLine: {'line': b'   47 |         scan_msg.range_max = \x1b[01;31m\x1b[Kmax_range_\x1b[m\x1b[K;\n'}
+[1.935798] (navigation_) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.940213] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:48:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krange\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kranges\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.940367] (navigation_) StderrLine: {'line': b'   48 |         scan_msg.ranges = \x1b[01;31m\x1b[Krange\x1b[m\x1b[K;\n'}
+[1.940446] (navigation_) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.940517] (navigation_) StderrLine: {'line': b'      |                           \x1b[32m\x1b[Kranges\x1b[m\x1b[K\n'}
+[2.005115] (-) TimerEvent: {}
+[2.105570] (-) TimerEvent: {}
+[2.206021] (-) TimerEvent: {}
+[2.306390] (-) TimerEvent: {}
+[2.406747] (-) TimerEvent: {}
+[2.507098] (-) TimerEvent: {}
+[2.607456] (-) TimerEvent: {}
+[2.635203] (navigation_) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/laserScan_.dir/build.make:76: CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o] Error 1\n'}
+[2.635558] (navigation_) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/laserScan_.dir/all] Error 2\n'}
+[2.635708] (navigation_) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.637660] (navigation_) CommandEnded: {'returncode': 2}
+[2.677817] (navigation_) JobEnded: {'identifier': 'navigation_', 'rc': 2}
+[2.678742] (-) EventReactorShutdown: {}

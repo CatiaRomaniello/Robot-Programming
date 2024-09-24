@@ -1,0 +1,40 @@
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      global_frame: odom
+      robot_base_frame: base_link
+      update_frequency: 5.0
+      publish_frequency: 2.0
+      resolution: 0.05
+      transform_tolerance: 0.5
+      rolling_window: true
+      width: 3.0
+      height: 3.0
+      plugins:
+        - {name: obstacle_layer, type: "nav2_costmap_2d::ObstacleLayer"}
+        - {name: inflation_layer, type: "nav2_costmap_2d::InflationLayer"}
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      global_frame: map
+      robot_base_frame: base_link
+      update_frequency: 2.0
+      publish_frequency: 2.0
+      resolution: 0.05
+      transform_tolerance: 0.5
+      plugins:
+        - {name: static_layer, type: "nav2_costmap_2d::StaticLayer"}
+        - {name: obstacle_layer, type: "nav2_costmap_2d::ObstacleLayer"}
+        - {name: inflation_layer, type: "nav2_costmap_2d::InflationLayer"}
+
+recoveries_server:
+  ros__parameters:
+    costmap_topic: "local_costmap/costmap_raw"
+    footprint_topic: "local_costmap/published_footprint"
+    recovery_behavior_plugin_names: ["spin", "back_up", "wait"]
+
+bt_navigator:
+  ros__parameters:
+    use_sim_time: false
+    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"

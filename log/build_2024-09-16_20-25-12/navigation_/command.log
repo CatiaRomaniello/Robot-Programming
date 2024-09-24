@@ -1,0 +1,2 @@
+Invoking command in '/home/catia/ros2_ws/build/navigation_': /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

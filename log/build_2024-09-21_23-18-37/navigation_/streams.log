@@ -1,0 +1,20 @@
+[0.009s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target laserScan_[0m
+[0.053s] [ 20%] Built target mobile_base
+[0.053s] [ 40%] Built target pub_occupancy_grid
+[0.056s] [ 60%] Built target tf_node
+[0.056s] [ 80%] Built target ipose
+[0.061s] [ 90%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m
+[1.882s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:[m[K In member function ‘[01m[Kvoid LaserPublisher::laser_callback()[m[K’:
+[1.882s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:36:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krange[m[K’ was not declared in this scope; did you mean ‘[01m[Kranges[m[K’?
+[1.882s]    36 |             [01;31m[Krange[m[K[i] = static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / 10.0));
+[1.882s]       |             [01;31m[K^~~~~[m[K
+[1.882s]       |             [32m[Kranges[m[K
+[1.885s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:48:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krange[m[K’ was not declared in this scope; did you mean ‘[01m[Kranges[m[K’?
+[1.886s]    48 |         scan_msg.ranges = [01;31m[Krange[m[K;
+[1.886s]       |                           [01;31m[K^~~~~[m[K
+[1.886s]       |                           [32m[Kranges[m[K
+[2.569s] gmake[2]: *** [CMakeFiles/laserScan_.dir/build.make:76: CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o] Error 1
+[2.569s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/laserScan_.dir/all] Error 2
+[2.569s] gmake: *** [Makefile:146: all] Error 2
+[2.571s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

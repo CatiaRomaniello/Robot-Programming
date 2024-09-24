@@ -1,0 +1,45 @@
+[0.014s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.075s] [35m[1mConsolidate compiler generated dependencies of target pub_occupancy_grid[0m
+[0.096s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o[0m
+[1.970s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGrid_Publisher::og_callback()[m[K’:
+[1.971s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:27:19:[m[K [01;31m[Kerror: [m[K‘[01m[Ksigned_char[m[K’ was not declared in this scope
+[1.971s]    27 |       std::vector<[01;31m[Ksigned_char[m[K> og_array(35);
+[1.971s]       |                   [01;31m[K^~~~~~~~~~~[m[K
+[1.971s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:27:30:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.971s]    27 |       std::vector<signed_char[01;31m[K>[m[K og_array(35);
+[1.971s]       |                              [01;31m[K^[m[K
+[1.971s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:27:30:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[1.971s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:29:17:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kint[int][m[K’ for array subscript
+[1.971s]    29 |         og_array[01;31m[K[[m[Ki] = i % 2 == 0 ? 100: 0;
+[1.971s]       |                 [01;31m[K^[m[K
+[1.971s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:47:33:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Knav_msgs::msg::OccupancyGrid_<std::allocator<void> >::_data_type[m[K’ {aka ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >[m[K’} and ‘[01m[Kint[m[K’)
+[1.971s]    47 |       occupancy_grid_msg.data = [01;31m[Kog_array[m[K;
+[1.971s]       |                                 [01;31m[K^~~~~~~~[m[K
+[1.972s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[1.972s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.972s]                  from [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:2[m[K:
+[1.972s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = signed char; _Alloc = std::allocator<signed char>][m[K’
+[1.972s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[1.972s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.972s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std::vector<signed char, std::allocator<signed char> >&[m[K’
+[1.972s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[1.972s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.972s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[1.972s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.972s]                  from [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:2[m[K:
+[1.972s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = signed char; _Alloc = std::allocator<signed char>][m[K’
+[1.972s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.972s]       |       [01;36m[K^~~~~~~~[m[K
+[1.972s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >&&[m[K’
+[1.972s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.973s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[1.973s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = signed char; _Alloc = std::allocator<signed char>][m[K’
+[1.973s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[1.973s]       |       [01;36m[K^~~~~~~~[m[K
+[1.973s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd::initializer_list<signed char>[m[K’
+[1.973s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[1.973s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.594s] gmake[2]: *** [CMakeFiles/pub_occupancy_grid.dir/build.make:76: CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o] Error 1
+[2.594s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pub_occupancy_grid.dir/all] Error 2
+[2.594s] gmake: *** [Makefile:146: all] Error 2
+[2.596s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

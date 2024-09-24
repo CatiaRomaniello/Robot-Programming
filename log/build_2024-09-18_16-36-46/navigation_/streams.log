@@ -1,0 +1,15 @@
+[0.009s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target mobile_base[0m
+[0.042s] [35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[0.050s] [ 25%] Built target pub_occupancy_grid
+[0.052s] [ 50%] Built target laserScan_
+[0.058s] [ 75%] Built target mobile_base
+[0.060s] [ 87%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[1.780s] [01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In constructor ‘[01m[KTransformBroadcasterNode::TransformBroadcasterNode()[m[K’:
+[1.780s] [01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:16:78:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+[1.780s]    16 |             std::bind(&TransformBroadcasterNode::publish_base_to_laser, this)[01;31m[K)[m[K;
+[1.780s]       |                                                                              [01;31m[K^[m[K
+[2.330s] gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+[2.331s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/tf_node.dir/all] Error 2
+[2.331s] gmake: *** [Makefile:146: all] Error 2
+[2.333s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

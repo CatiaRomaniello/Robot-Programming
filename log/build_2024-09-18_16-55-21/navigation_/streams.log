@@ -1,0 +1,18 @@
+[0.010s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target pub_occupancy_grid[0m
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[0.051s] [ 25%] Built target mobile_base
+[0.055s] [ 50%] Built target laserScan_
+[0.057s] [ 62%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[0.057s] [ 75%] [32mBuilding CXX object CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o[0m
+[1.899s] [01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In constructor ‘[01m[KTransformBroadcasterNode::TransformBroadcasterNode()[m[K’:
+[1.899s] [01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:12:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_map_to_odom[m[K’ was not declared in this scope
+[1.899s]    12 |         [01;31m[Kpublish_map_to_odom[m[K();
+[1.899s]       |         [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.493s] gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+[2.493s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/tf_node.dir/all] Error 2
+[2.493s] gmake[1]: *** Waiting for unfinished jobs....
+[3.599s] [ 87%] [32m[1mLinking CXX executable pub_occupancy_grid[0m
+[3.774s] [ 87%] Built target pub_occupancy_grid
+[3.775s] gmake: *** [Makefile:146: all] Error 2
+[3.777s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

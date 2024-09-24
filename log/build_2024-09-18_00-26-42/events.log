@@ -1,0 +1,67 @@
+[0.000000] (-) TimerEvent: {}
+[0.000273] (navigation_) JobQueued: {'identifier': 'navigation_', 'dependencies': OrderedDict()}
+[0.000440] (navigation_) JobStarted: {'identifier': 'navigation_'}
+[0.006910] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'cmake'}
+[0.007360] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'build'}
+[0.007951] (navigation_) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/catia/ros2_ws/build/navigation_', '--', '-j8', '-l8'], 'cwd': '/home/catia/ros2_ws/build/navigation_', 'env': OrderedDict([('USER', 'catia'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/catia'), ('OLDPWD', '/home/catia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '1685'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/catia/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'catia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'catia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cat:@/tmp/.ICE-unix/1492,unix/cat:/tmp/.ICE-unix/1492'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/3270a6b2_789e_4346_8cf3_bb7ccc41eb89'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BMHYT2'), ('GNOME_TERMINAL_SERVICE', ':1.126'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/catia/ros2_ws/build/navigation_'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble')]), 'shell': False}
+[0.041002] (navigation_) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tf_node\x1b[0m\n'}
+[0.050911] (navigation_) StdoutLine: {'line': b'[ 25%] Built target laserScan_\n'}
+[0.052766] (navigation_) StdoutLine: {'line': b'[ 62%] Built target mobile_base\n'}
+[0.052910] (navigation_) StdoutLine: {'line': b'[ 75%] Built target pub_occupancy_grid\n'}
+[0.055451] (navigation_) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o\x1b[0m\n'}
+[0.099891] (-) TimerEvent: {}
+[0.200232] (-) TimerEvent: {}
+[0.300557] (-) TimerEvent: {}
+[0.400962] (-) TimerEvent: {}
+[0.501292] (-) TimerEvent: {}
+[0.601582] (-) TimerEvent: {}
+[0.701884] (-) TimerEvent: {}
+[0.802168] (-) TimerEvent: {}
+[0.902446] (-) TimerEvent: {}
+[1.002737] (-) TimerEvent: {}
+[1.103071] (-) TimerEvent: {}
+[1.203414] (-) TimerEvent: {}
+[1.303750] (-) TimerEvent: {}
+[1.404090] (-) TimerEvent: {}
+[1.504505] (-) TimerEvent: {}
+[1.605000] (-) TimerEvent: {}
+[1.705268] (-) TimerEvent: {}
+[1.804058] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid TransformBroadcasterNode::base_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.804208] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:43:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunnecessary parentheses in declaration of \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses\x07-Wparentheses\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.804261] (navigation_) StderrLine: {'line': b'   43 |         void\x1b[01;35m\x1b[K(msg)\x1b[m\x1b[K;\n'}
+[1.804304] (navigation_) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.805354] (-) TimerEvent: {}
+[1.807730] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:43:13:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kremove parentheses\n'}
+[1.807809] (navigation_) StderrLine: {'line': b'   43 |         void\x1b[01;36m\x1b[K(msg)\x1b[m\x1b[K;\n'}
+[1.807855] (navigation_) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[1.807897] (navigation_) StderrLine: {'line': b'      |             \x1b[31m\x1b[K-\x1b[m\x1b[K   \x1b[31m\x1b[K-\x1b[m\x1b[K\n'}
+[1.807938] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:43:14:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvariable or field \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 declared void\n'}
+[1.807980] (navigation_) StderrLine: {'line': b'   43 |         void(\x1b[01;31m\x1b[Kmsg\x1b[m\x1b[K);\n'}
+[1.808058] (navigation_) StderrLine: {'line': b'      |              \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.808142] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:42:65:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.808236] (navigation_) StderrLine: {'line': b'   42 |     void base_callback(\x1b[01;35m\x1b[Kconst nav_msgs::msg::Odometry::SharedPtr msg\x1b[m\x1b[K) {\n'}
+[1.808278] (navigation_) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[1.905524] (-) TimerEvent: {}
+[2.005795] (-) TimerEvent: {}
+[2.106059] (-) TimerEvent: {}
+[2.206359] (-) TimerEvent: {}
+[2.306658] (-) TimerEvent: {}
+[2.406946] (-) TimerEvent: {}
+[2.507245] (-) TimerEvent: {}
+[2.607545] (-) TimerEvent: {}
+[2.707829] (-) TimerEvent: {}
+[2.808087] (-) TimerEvent: {}
+[2.908417] (-) TimerEvent: {}
+[3.008767] (-) TimerEvent: {}
+[3.109067] (-) TimerEvent: {}
+[3.209395] (-) TimerEvent: {}
+[3.309668] (-) TimerEvent: {}
+[3.409941] (-) TimerEvent: {}
+[3.510240] (-) TimerEvent: {}
+[3.601977] (navigation_) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1\n'}
+[3.602323] (navigation_) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/tf_node.dir/all] Error 2\n'}
+[3.602628] (navigation_) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.604204] (navigation_) CommandEnded: {'returncode': 2}
+[3.610425] (-) TimerEvent: {}
+[3.637532] (navigation_) JobEnded: {'identifier': 'navigation_', 'rc': 2}
+[3.648125] (-) EventReactorShutdown: {}

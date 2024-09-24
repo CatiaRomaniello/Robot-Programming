@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target laserScan_[0m
+[ 66%] Built target pub_occupancy_grid
+[ 66%] Built target mobile_base
+[ 83%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:[m[K In member function ‘[01m[Kvoid LaserPublisher::publish_base_link_to_odom_transform()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:75:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf2[m[K’ has not been declared
+   75 |         [01;31m[Ktf2[m[K::Quaternion q;
+      |         [01;31m[K^~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:76:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kq[m[K’ was not declared in this scope
+   76 |         [01;31m[Kq[m[K.setRPY(0, 0, 0);
+      |         [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/laserScan_.dir/build.make:76: CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/laserScan_.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

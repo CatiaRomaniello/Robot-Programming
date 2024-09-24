@@ -1,0 +1,13 @@
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:[m[K In constructor ‘[01m[KMobileBasePublisher::MobileBasePublisher()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:28:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kbase_publisher[m[K’?
+   28 |       [01;31m[Kmarker_publisher[m[K = this->create_publisher<visualization_msgs::msg::Marker>("visualization_marker", 10);
+      |       [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |       [32m[Kbase_publisher[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:[m[K In member function ‘[01m[Kvoid MobileBasePublisher::publish_marker()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:111:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmarker_publisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kbase_publisher[m[K’?
+  111 |     [01;31m[Kmarker_publisher[m[K->publish(marker);
+      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kbase_publisher[m[K
+gmake[2]: *** [CMakeFiles/mobile_base.dir/build.make:76: CMakeFiles/mobile_base.dir/src/mobile_base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mobile_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

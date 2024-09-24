@@ -1,0 +1,17 @@
+[0.010s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.121s] [ 30%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m
+[0.121s] [ 50%] Built target pub_occupancy_grid
+[0.121s] [ 50%] Built target tf_node
+[0.122s] [ 70%] Built target ipose
+[0.124s] [ 90%] Built target mobile_base
+[2.022s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:[m[K In constructor ‘[01m[KLaserPublisher::LaserPublisher()[m[K’:
+[2.022s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:21:5:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+[2.022s]    21 |     [01;31m[K{[m[K
+[2.022s]       |     [01;31m[K^[m[K
+[2.024s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:24:82:[m[K [01;31m[Kerror: [m[K‘[01m[Klaser_callback[m[K’ is not a member of ‘[01m[KLaserPublisher[m[K’
+[2.024s]    24 |         laser_timer_ = this->create_wall_timer(500ms, std::bind(&LaserPublisher::[01;31m[Klaser_callback[m[K, this));
+[2.024s]       |                                                                                  [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.637s] gmake[2]: *** [CMakeFiles/laserScan_.dir/build.make:76: CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o] Error 1
+[2.638s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/laserScan_.dir/all] Error 2
+[2.638s] gmake: *** [Makefile:146: all] Error 2
+[2.640s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

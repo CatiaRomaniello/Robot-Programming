@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 50%] Built target pub_occupancy_grid
+[ 50%] Built target laserScan_
+[ 75%] Built target mobile_base
+[ 87%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m

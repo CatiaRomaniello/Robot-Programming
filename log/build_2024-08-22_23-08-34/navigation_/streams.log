@@ -1,0 +1,12 @@
+[0.011s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.041s] [35m[1mConsolidate compiler generated dependencies of target pub_occupancy_grid[0m
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o[0m
+[1.762s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGrid_Publisher::og_callback()[m[K’:
+[1.762s] [01m[K/home/catia/ros2_ws/src/navigation_/src/pub_occupancy_grid.cpp:35:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _info_type = struct nav_msgs::msg::MapMetaData_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct nav_msgs::msg::MapMetaData_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kheigth[m[K’; did you mean ‘[01m[Kheight[m[K’?
+[1.762s]    35 |       og_msg.info.[01;31m[Kheigth[m[K = 3;
+[1.762s]       |                   [01;31m[K^~~~~~[m[K
+[1.762s]       |                   [32m[Kheight[m[K
+[2.382s] gmake[2]: *** [CMakeFiles/pub_occupancy_grid.dir/build.make:76: CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o] Error 1
+[2.382s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pub_occupancy_grid.dir/all] Error 2
+[2.382s] gmake: *** [Makefile:146: all] Error 2
+[2.384s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

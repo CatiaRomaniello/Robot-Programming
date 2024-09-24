@@ -1,0 +1,4 @@
+[35m[1mConsolidate compiler generated dependencies of target laser_pub[0m
+[ 66%] Built target sub_node
+[ 66%] Built target pub_node
+[ 83%] [32mBuilding CXX object CMakeFiles/laser_pub.dir/src/laser_publisher.cpp.o[0m

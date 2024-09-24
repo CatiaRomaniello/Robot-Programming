@@ -1,0 +1,45 @@
+[0.009s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.058s] [ 20%] Built target mobile_base
+[0.059s] [ 40%] Built target pub_occupancy_grid
+[0.061s] [ 60%] Built target tf_node
+[0.062s] [ 80%] Built target ipose
+[0.063s] [ 90%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m
+[4.335s] [100%] [32m[1mLinking CXX executable laserScan_[0m
+[4.548s] [100%] Built target laserScan_
+[4.556s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[4.593s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/navigation_
+[4.599s] -- Install configuration: ""
+[4.599s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/pub_occupancy_grid
+[4.599s] -- Installing: /home/catia/ros2_ws/install/navigation_/lib/navigation_/laserScan_
+[4.601s] -- Set runtime path of "/home/catia/ros2_ws/install/navigation_/lib/navigation_/laserScan_" to ""
+[4.601s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/mobile_base
+[4.601s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/tf_node
+[4.601s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/ipose
+[4.601s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/launch
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/launch/nav_launch.py
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/launch/mapping_launch.py
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/cappero_laser_odom_diag_2020-05-06-16-26-03.yaml
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/tb3_map.yaml
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/tb3_map.pgm
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/prova.rviz
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/diag.rviz
+[4.602s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/nav2_param.yaml
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/cappero_laser_odom_diag_2020-05-06-16-26-03.png
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/config/default.rviz
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/package_run_dependencies/navigation_
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/parent_prefix_path/navigation_
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/ament_prefix_path.sh
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/ament_prefix_path.dsv
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/path.sh
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/path.dsv
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.bash
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.sh
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.zsh
+[4.603s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.dsv
+[4.603s] -- Installing: /home/catia/ros2_ws/install/navigation_/share/navigation_/package.dsv
+[4.604s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/packages/navigation_
+[4.604s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/cmake/navigation_Config.cmake
+[4.604s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/cmake/navigation_Config-version.cmake
+[4.604s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/package.xml
+[4.604s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/navigation_

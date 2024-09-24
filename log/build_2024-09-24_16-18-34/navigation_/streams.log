@@ -1,0 +1,66 @@
+[0.012s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.048s] [35m[1mConsolidate compiler generated dependencies of target laserScan_[0m
+[0.058s] [ 20%] Built target tf_node
+[0.058s] [ 40%] Built target mobile_base
+[0.061s] [ 60%] Built target ipose
+[0.061s] [ 80%] Built target pub_occupancy_grid
+[0.065s] [ 90%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m
+[1.846s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:[m[K In member function ‘[01m[Kvoid LaserScanPublisher::publish_scan()[m[K’:
+[1.846s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:55:23:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ksensor_msgs::msg::LaserScan_<std::allocator<void> >::_ranges_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} and ‘[01m[Kstd::vector<double>[m[K’)
+[1.846s]    55 |         scan.ranges = [01;31m[Kranges_[m[K;
+[1.846s]       |                       [01;31m[K^~~~~~~[m[K
+[1.846s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[1.846s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.846s]                  from [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:2[m[K:
+[1.846s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+[1.846s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[1.846s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.847s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double>[m[K’ to ‘[01m[Kconst std::vector<float>&[m[K’
+[1.847s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[1.847s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.847s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[1.847s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.847s]                  from [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:2[m[K:
+[1.847s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+[1.847s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.847s]       |       [01;36m[K^~~~~~~~[m[K
+[1.847s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double>[m[K’ to ‘[01m[Kstd::vector<float>&&[m[K’
+[1.847s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.847s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[1.847s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+[1.847s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[1.847s]       |       [01;36m[K^~~~~~~~[m[K
+[1.847s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double>[m[K’ to ‘[01m[Kstd::initializer_list<float>[m[K’
+[1.847s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[1.847s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.847s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:56:28:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Ksensor_msgs::msg::LaserScan_<std::allocator<void> >::_intensities_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} and ‘[01m[Kstd::vector<double>[m[K’)
+[1.847s]    56 |         scan.intensities = [01;31m[Kintensities_[m[K;
+[1.847s]       |                            [01;31m[K^~~~~~~~~~~~[m[K
+[1.847s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[1.848s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.848s]                  from [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:2[m[K:
+[1.848s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+[1.848s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[1.848s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.848s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double>[m[K’ to ‘[01m[Kconst std::vector<float>&[m[K’
+[1.848s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[1.848s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[1.848s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[1.848s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[1.848s]                  from [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:2[m[K:
+[1.848s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+[1.848s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.848s]       |       [01;36m[K^~~~~~~~[m[K
+[1.848s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double>[m[K’ to ‘[01m[Kstd::vector<float>&&[m[K’
+[1.848s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[1.848s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[1.848s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+[1.848s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[1.848s]       |       [01;36m[K^~~~~~~~[m[K
+[1.848s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<double>[m[K’ to ‘[01m[Kstd::initializer_list<float>[m[K’
+[1.848s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[1.849s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[2.510s] gmake[2]: *** [CMakeFiles/laserScan_.dir/build.make:76: CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o] Error 1
+[2.510s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/laserScan_.dir/all] Error 2
+[2.511s] gmake: *** [Makefile:146: all] Error 2
+[2.514s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

@@ -1,0 +1,33 @@
+[0.009s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target laserScan_[0m
+[0.056s] [ 20%] Built target tf_node
+[0.057s] [ 40%] Built target pub_occupancy_grid
+[0.058s] [ 60%] Built target mobile_base
+[0.059s] [ 70%] [32mBuilding CXX object CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o[0m
+[0.059s] [ 90%] Built target ipose
+[1.874s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:[m[K In member function ‘[01m[Kvoid LaserPublisher::laser_callback()[m[K’:
+[1.874s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:36:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_range_[m[K’ was not declared in this scope
+[1.874s]    36 |             ranges[i] = [01;31m[Kmin_range_[m[K + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / (max_range_ - min_range_)));
+[1.874s]       |                         [01;31m[K^~~~~~~~~~[m[K
+[1.879s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:36:99:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_range_[m[K’ was not declared in this scope
+[1.879s]    36 |             ranges[i] = min_range_ + static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / ([01;31m[Kmax_range_[m[K - min_range_)));
+[1.879s]       |                                                                                                   [01;31m[K^~~~~~~~~~[m[K
+[1.885s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:43:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_min_[m[K’ was not declared in this scope
+[1.885s]    43 |         scan_msg.angle_min = [01;31m[Kangle_min_[m[K;
+[1.885s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[1.889s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:44:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_max_[m[K’ was not declared in this scope
+[1.889s]    44 |         scan_msg.angle_max = [01;31m[Kangle_max_[m[K;
+[1.890s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[1.897s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:45:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_increment_[m[K’ was not declared in this scope
+[1.897s]    45 |         scan_msg.angle_increment = [01;31m[Kangle_increment_[m[K;
+[1.898s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.902s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:46:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_range_[m[K’ was not declared in this scope
+[1.902s]    46 |         scan_msg.range_min = [01;31m[Kmin_range_[m[K;
+[1.903s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[1.908s] [01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:47:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_range_[m[K’ was not declared in this scope
+[1.908s]    47 |         scan_msg.range_max = [01;31m[Kmax_range_[m[K;
+[1.908s]       |                              [01;31m[K^~~~~~~~~~[m[K
+[2.595s] gmake[2]: *** [CMakeFiles/laserScan_.dir/build.make:76: CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o] Error 1
+[2.595s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/laserScan_.dir/all] Error 2
+[2.595s] gmake: *** [Makefile:146: all] Error 2
+[2.597s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8

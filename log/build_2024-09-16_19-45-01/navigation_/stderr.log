@@ -1,0 +1,10 @@
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:[m[K In member function ‘[01m[Kvoid MobileBasePublisher::base_callback()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:42:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::Header_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kchild_frame_id[m[K’
+   42 |       odom_msg.header.[01;31m[Kchild_frame_id[m[K = "base_link"
+      |                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/mobile_base.cpp:63:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing _header_type = struct std_msgs::msg::Header_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct std_msgs::msg::Header_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kchild_frame_id[m[K’
+   63 |       transform_stamped.header.[01;31m[Kchild_frame_id[m[K = "base_link";
+      |                                [01;31m[K^~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mobile_base.dir/build.make:76: CMakeFiles/mobile_base.dir/src/mobile_base.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/mobile_base.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

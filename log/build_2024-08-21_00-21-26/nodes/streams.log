@@ -1,0 +1,28 @@
+[0.011s] Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8
+[0.045s] [35m[1mConsolidate compiler generated dependencies of target pub_node[0m
+[0.056s] [ 25%] [32mBuilding CXX object CMakeFiles/sub_node.dir/src/subscriber.cpp.o[0m
+[0.060s] [ 75%] Built target pub_node
+[8.306s] [100%] [32m[1mLinking CXX executable sub_node[0m
+[8.740s] [100%] Built target sub_node
+[8.748s] Invoked command in '/home/catia/ros2_ws/build/nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8
+[8.779s] Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/nodes
+[8.787s] -- Install configuration: ""
+[8.787s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/lib/nodes/pub_node
+[8.787s] -- Installing: /home/catia/ros2_ws/install/nodes/lib/nodes/sub_node
+[8.791s] -- Set runtime path of "/home/catia/ros2_ws/install/nodes/lib/nodes/sub_node" to ""
+[8.791s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/ament_index/resource_index/package_run_dependencies/nodes
+[8.791s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/ament_index/resource_index/parent_prefix_path/nodes
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/environment/ament_prefix_path.sh
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/environment/ament_prefix_path.dsv
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/environment/path.sh
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/environment/path.dsv
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/local_setup.bash
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/local_setup.sh
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/local_setup.zsh
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/local_setup.dsv
+[8.792s] -- Installing: /home/catia/ros2_ws/install/nodes/share/nodes/package.dsv
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/ament_index/resource_index/packages/nodes
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/cmake/nodesConfig.cmake
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/cmake/nodesConfig-version.cmake
+[8.792s] -- Up-to-date: /home/catia/ros2_ws/install/nodes/share/nodes/package.xml
+[8.793s] Invoked command in '/home/catia/ros2_ws/build/nodes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/nodes

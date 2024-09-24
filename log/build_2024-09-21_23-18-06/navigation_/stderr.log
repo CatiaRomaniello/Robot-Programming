@@ -1,0 +1,27 @@
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:[m[K In member function ‘[01m[Kvoid LaserPublisher::laser_callback()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:36:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krange[m[K’ was not declared in this scope; did you mean ‘[01m[Kranges[m[K’?
+   36 |             [01;31m[Krange[m[K[i] = static_cast<float>(rand()) / (static_cast<float>(RAND_MAX / 10.0));
+      |             [01;31m[K^~~~~[m[K
+      |             [32m[Kranges[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:43:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_min_[m[K’ was not declared in this scope
+   43 |         scan_msg.angle_min = [01;31m[Kangle_min_[m[K;
+      |                              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:44:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_max_[m[K’ was not declared in this scope
+   44 |         scan_msg.angle_max = [01;31m[Kangle_max_[m[K;
+      |                              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:45:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_increment_[m[K’ was not declared in this scope
+   45 |         scan_msg.angle_increment = [01;31m[Kangle_increment_[m[K;
+      |                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:46:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_range_[m[K’ was not declared in this scope
+   46 |         scan_msg.range_min = [01;31m[Kmin_range_[m[K;
+      |                              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:47:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_range_[m[K’ was not declared in this scope
+   47 |         scan_msg.range_max = [01;31m[Kmax_range_[m[K;
+      |                              [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/laser_scan.cpp:48:27:[m[K [01;31m[Kerror: [m[K‘[01m[Krange[m[K’ was not declared in this scope; did you mean ‘[01m[Kranges[m[K’?
+   48 |         scan_msg.ranges = [01;31m[Krange[m[K;
+      |                           [01;31m[K^~~~~[m[K
+      |                           [32m[Kranges[m[K
+gmake[2]: *** [CMakeFiles/laserScan_.dir/build.make:76: CMakeFiles/laserScan_.dir/src/laser_scan.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/laserScan_.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

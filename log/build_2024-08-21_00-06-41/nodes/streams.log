@@ -1,0 +1,30 @@
+[0.011s] Invoking command in '/home/catia/ros2_ws/build/nodes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8
+[0.079s] [35m[1mConsolidate compiler generated dependencies of target sub_node[0m
+[0.103s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/publisher.cpp.o[0m
+[0.103s] [ 50%] [32mBuilding CXX object CMakeFiles/sub_node.dir/src/subscriber.cpp.o[0m
+[2.239s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:37:25:[m[K [01;31m[Kerror: [m[Kexpected identifier before numeric constant
+[2.240s]    37 |     void timer_callback([01;31m[K2[m[K)
+[2.240s]       |                         [01;31m[K^[m[K
+[2.240s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:37:25:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before numeric constant
+[2.255s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:[m[K In constructor ‘[01m[KMinimalPublisher::MinimalPublisher()[m[K’:
+[2.255s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:25:77:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_callback2[m[K’ is not a member of ‘[01m[KMinimalPublisher[m[K’
+[2.255s]    25 | this->create_wall_timer(500ms, std::bind(&MinimalPublisher::[01;31m[Ktimer_callback2[m[K, this));
+[2.255s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.255s] 
+[2.262s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback1()[m[K’:
+[2.262s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:34:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_1[m[K’?
+[2.262s]    34 |       [01;31m[Kpublisher_[m[K->publish(message);
+[2.262s]       |       [01;31m[K^~~~~~~~~~[m[K
+[2.263s]       |       [32m[Kpublisher_1[m[K
+[2.269s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:[m[K In member function ‘[01m[Kvoid MinimalPublisher::timer_callback(int)[m[K’:
+[2.269s] [01m[K/home/catia/ros2_ws/src/nodes/src/publisher.cpp:42:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublisher_1[m[K’?
+[2.269s]    42 |       [01;31m[Kpublisher_[m[K->publish(message);
+[2.269s]       |       [01;31m[K^~~~~~~~~~[m[K
+[2.269s]       |       [32m[Kpublisher_1[m[K
+[2.951s] gmake[2]: *** [CMakeFiles/pub_node.dir/build.make:76: CMakeFiles/pub_node.dir/src/publisher.cpp.o] Error 1
+[2.951s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pub_node.dir/all] Error 2
+[2.951s] gmake[1]: *** Waiting for unfinished jobs....
+[7.118s] [ 75%] [32m[1mLinking CXX executable sub_node[0m
+[7.569s] [ 75%] Built target sub_node
+[7.570s] gmake: *** [Makefile:146: all] Error 2
+[7.571s] Invoked command in '/home/catia/ros2_ws/build/nodes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/nodes -- -j8 -l8

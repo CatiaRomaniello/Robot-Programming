@@ -1,0 +1,36 @@
+[0.009s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[0.043s] [35m[1mConsolidate compiler generated dependencies of target pub_occupancy_grid[0m
+[0.053s] [ 25%] Built target mobile_base
+[0.057s] [ 50%] Built target laserScan_
+[0.058s] [ 62%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[0.058s] [ 75%] [32mBuilding CXX object CMakeFiles/pub_occupancy_grid.dir/src/pub_occupancy_grid.cpp.o[0m
+[3.327s] [ 87%] [32m[1mLinking CXX executable tf_node[0m
+[3.498s] [ 87%] Built target tf_node
+[3.721s] [100%] [32m[1mLinking CXX executable pub_occupancy_grid[0m
+[3.902s] [100%] Built target pub_occupancy_grid
+[3.912s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/catia/ros2_ws/build/navigation_ -- -j8 -l8
+[3.961s] Invoking command in '/home/catia/ros2_ws/build/navigation_': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/navigation_
+[3.967s] -- Install configuration: ""
+[3.967s] -- Installing: /home/catia/ros2_ws/install/navigation_/lib/navigation_/pub_occupancy_grid
+[3.969s] -- Set runtime path of "/home/catia/ros2_ws/install/navigation_/lib/navigation_/pub_occupancy_grid" to ""
+[3.969s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/laserScan_
+[3.969s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/lib/navigation_/mobile_base
+[3.969s] -- Installing: /home/catia/ros2_ws/install/navigation_/lib/navigation_/tf_node
+[3.971s] -- Set runtime path of "/home/catia/ros2_ws/install/navigation_/lib/navigation_/tf_node" to ""
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/package_run_dependencies/navigation_
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/parent_prefix_path/navigation_
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/ament_prefix_path.sh
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/ament_prefix_path.dsv
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/path.sh
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/environment/path.dsv
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.bash
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.sh
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.zsh
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/local_setup.dsv
+[3.971s] -- Installing: /home/catia/ros2_ws/install/navigation_/share/navigation_/package.dsv
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/ament_index/resource_index/packages/navigation_
+[3.971s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/cmake/navigation_Config.cmake
+[3.972s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/cmake/navigation_Config-version.cmake
+[3.972s] -- Up-to-date: /home/catia/ros2_ws/install/navigation_/share/navigation_/package.xml
+[3.973s] Invoked command in '/home/catia/ros2_ws/build/navigation_' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/catia/ros2_ws/build/navigation_

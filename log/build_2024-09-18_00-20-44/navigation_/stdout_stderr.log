@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 50%] Built target laserScan_
+[ 50%] Built target pub_occupancy_grid
+[ 75%] Built target mobile_base
+[ 87%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In constructor ‘[01m[KTransformBroadcasterNode::TransformBroadcasterNode()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_subscriber_[m[K’ was not declared in this scope; did you mean ‘[01m[Kodom_subscriber_[m[K’?
+   16 |         [01;31m[Kbase_subscriber_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kodom_subscriber_[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In member function ‘[01m[Kvoid TransformBroadcasterNode::base_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:42:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |     void base_callback([01;35m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K) {
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/tf_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

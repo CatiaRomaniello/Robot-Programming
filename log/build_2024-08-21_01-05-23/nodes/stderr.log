@@ -1,0 +1,10 @@
+[01m[K/home/catia/ros2_ws/src/nodes/src/laser_publisher.cpp:[m[K In constructor ‘[01m[KLaserPublisher::LaserPublisher()[m[K’:
+[01m[K/home/catia/ros2_ws/src/nodes/src/laser_publisher.cpp:18:5:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
+   18 |     [01;31m[K{[m[K
+      |     [01;31m[K^[m[K
+[01m[K/home/catia/ros2_ws/src/nodes/src/laser_publisher.cpp:20:63:[m[K [01;31m[Kerror: [m[K‘[01m[KMinimalPublisher[m[K’ has not been declared
+   20 |       laser_timer = this->create_wall_timer(500ms, std::bind(&[01;31m[KMinimalPublisher[m[K::laser_callback,this));
+      |                                                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/laser_pub.dir/build.make:76: CMakeFiles/laser_pub.dir/src/laser_publisher.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:193: CMakeFiles/laser_pub.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

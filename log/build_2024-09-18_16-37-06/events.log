@@ -1,0 +1,62 @@
+[0.000000] (-) TimerEvent: {}
+[0.000195] (navigation_) JobQueued: {'identifier': 'navigation_', 'dependencies': OrderedDict()}
+[0.000252] (navigation_) JobStarted: {'identifier': 'navigation_'}
+[0.006479] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'cmake'}
+[0.007525] (navigation_) JobProgress: {'identifier': 'navigation_', 'progress': 'build'}
+[0.007588] (navigation_) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/catia/ros2_ws/build/navigation_', '--', '-j8', '-l8'], 'cwd': '/home/catia/ros2_ws/build/navigation_', 'env': OrderedDict([('USER', 'catia'), ('LC_TIME', 'it_IT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/catia'), ('OLDPWD', '/home/catia'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'it_IT.UTF-8'), ('SYSTEMD_EXEC_PID', '1670'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/catia/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'catia'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'catia'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/cat:@/tmp/.ICE-unix/1474,unix/cat:/tmp/.ICE-unix/1474'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'it_IT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7e480b22_9ac6_45cb_964a_a40f8b2ff0d9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'it_IT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A0TBU2'), ('GNOME_TERMINAL_SERVICE', ':1.133'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'it_IT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LC_MEASUREMENT', 'it_IT.UTF-8'), ('LC_IDENTIFICATION', 'it_IT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/catia/ros2_ws/build/navigation_'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'it_IT.UTF-8'), ('LC_PAPER', 'it_IT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/catia/ros2_ws/install/nodes:/home/catia/ros2_ws/install/navigation_:/opt/ros/humble')]), 'shell': False}
+[0.042840] (navigation_) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tf_node\x1b[0m\n'}
+[0.052196] (navigation_) StdoutLine: {'line': b'[ 25%] Built target laserScan_\n'}
+[0.054059] (navigation_) StdoutLine: {'line': b'[ 75%] Built target mobile_base\n'}
+[0.054198] (navigation_) StdoutLine: {'line': b'[ 75%] Built target pub_occupancy_grid\n'}
+[0.057195] (navigation_) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o\x1b[0m\n'}
+[0.099344] (-) TimerEvent: {}
+[0.199701] (-) TimerEvent: {}
+[0.300008] (-) TimerEvent: {}
+[0.400293] (-) TimerEvent: {}
+[0.500602] (-) TimerEvent: {}
+[0.600931] (-) TimerEvent: {}
+[0.701339] (-) TimerEvent: {}
+[0.801711] (-) TimerEvent: {}
+[0.901982] (-) TimerEvent: {}
+[1.002319] (-) TimerEvent: {}
+[1.102635] (-) TimerEvent: {}
+[1.202952] (-) TimerEvent: {}
+[1.303279] (-) TimerEvent: {}
+[1.403585] (-) TimerEvent: {}
+[1.503899] (-) TimerEvent: {}
+[1.604219] (-) TimerEvent: {}
+[1.704575] (-) TimerEvent: {}
+[1.804918] (-) TimerEvent: {}
+[1.839567] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KTransformBroadcasterNode::TransformBroadcasterNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.839973] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:13:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KTransformBroadcasterNode::create_wall_timer(std::chrono::milliseconds, std::_Bind_helper<false, void (TransformBroadcasterNode::*)(), TransformBroadcasterNode*>::type, std::_Bind_helper<false, void (TransformBroadcasterNode::*)(), TransformBroadcasterNode*>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.840088] (navigation_) StderrLine: {'line': b'   13 |         timer_ = \x1b[01;31m\x1b[Kthis->create_wall_timer(\x1b[m\x1b[K\n'}
+[1.840160] (navigation_) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[1.840230] (navigation_) StderrLine: {'line': b'   14 | \x1b[01;31m\x1b[K            std::chrono::milliseconds(500),\x1b[m\x1b[K\n'}
+[1.840299] (navigation_) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.840369] (navigation_) StderrLine: {'line': b'   15 | \x1b[01;31m\x1b[K            std::bind(&TransformBroadcasterNode::publish_map_to_odom, this),\x1b[m\x1b[K\n'}
+[1.840438] (navigation_) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.840507] (navigation_) StderrLine: {'line': b'   16 | \x1b[01;31m\x1b[K            std::bind(&TransformBroadcasterNode::publish_base_to_laser, this))\x1b[m\x1b[K;\n'}
+[1.840576] (navigation_) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.840645] (navigation_) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[1.840712] (navigation_) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[1.840783] (navigation_) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.840853] (navigation_) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:1\x1b[m\x1b[K:\n'}
+[1.840921] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class DurationRepT, class DurationT, class CallbackT> typename rclcpp::WallTimer<CallbackT>::SharedPtr rclcpp::Node::create_wall_timer(std::chrono::duration<_Rep1, _Period1>, CallbackT, rclcpp::CallbackGroup::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.840993] (navigation_) StderrLine: {'line': b'  238 |   \x1b[01;36m\x1b[Kcreate_wall_timer\x1b[m\x1b[K(\n'}
+[1.841063] (navigation_) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.841130] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:238:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[1.841199] (navigation_) StderrLine: {'line': b'\x1b[01m\x1b[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:16:22:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  cannot convert \xe2\x80\x98\x1b[01m\x1b[Kstd::bind(_Func&&, _BoundArgs&& ...) [with _Func = void (TransformBroadcasterNode::*)(); _BoundArgs = {TransformBroadcasterNode*}; typename std::_Bind_helper<std::__is_socketlike<_Func>::value, _Func, _BoundArgs ...>::type = std::_Bind_helper<false, void (TransformBroadcasterNode::*)(), TransformBroadcasterNode*>::type; std::__is_socketlike<_Func> = std::__is_socketlike<void (TransformBroadcasterNode::*)(), void (TransformBroadcasterNode::*)()>; typename std::decay<_Tp>::type = void (TransformBroadcasterNode::*)()](((TransformBroadcasterNode*)this))\x1b[m\x1b[K\xe2\x80\x99 (type \xe2\x80\x98\x1b[01m\x1b[Kstd::_Bind_helper<false, void (TransformBroadcasterNode::*)(), TransformBroadcasterNode*>::type\x1b[m\x1b[K\xe2\x80\x99) to type \xe2\x80\x98\x1b[01m\x1b[Krclcpp::CallbackGroup::SharedPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<rclcpp::CallbackGroup>\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[1.841284] (navigation_) StderrLine: {'line': b'   16 |             \x1b[01;36m\x1b[Kstd::bind(&TransformBroadcasterNode::publish_base_to_laser, this)\x1b[m\x1b[K);\n'}
+[1.841353] (navigation_) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.905071] (-) TimerEvent: {}
+[2.005432] (-) TimerEvent: {}
+[2.105747] (-) TimerEvent: {}
+[2.206070] (-) TimerEvent: {}
+[2.306425] (-) TimerEvent: {}
+[2.376009] (navigation_) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1\n'}
+[2.376536] (navigation_) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/tf_node.dir/all] Error 2\n'}
+[2.376834] (navigation_) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[2.378382] (navigation_) CommandEnded: {'returncode': 2}
+[2.406539] (-) TimerEvent: {}
+[2.410595] (navigation_) JobEnded: {'identifier': 'navigation_', 'rc': 2}
+[2.421622] (-) EventReactorShutdown: {}

@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target tf_node[0m
+[ 25%] Built target laserScan_
+[ 62%] Built target mobile_base
+[ 75%] Built target pub_occupancy_grid
+[ 87%] [32mBuilding CXX object CMakeFiles/tf_node.dir/src/tf_node.cpp.o[0m
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In member function ‘[01m[Kvoid TransformBroadcasterNode::base_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:43:13:[m[K [01;35m[Kwarning: [m[Kunnecessary parentheses in declaration of ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+   43 |         void[01;35m[K(msg)[m[K;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:43:13:[m[K [01;36m[Knote: [m[Kremove parentheses
+   43 |         void[01;36m[K(msg)[m[K;
+      |             [01;36m[K^~~~~[m[K
+      |             [31m[K-[m[K   [31m[K-[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:43:14:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kmsg[m[K’ declared void
+   43 |         void([01;31m[Kmsg[m[K);
+      |              [01;31m[K^~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:42:65:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   42 |     void base_callback([01;35m[Kconst nav_msgs::msg::Odometry::SharedPtr msg[m[K) {
+      |                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/tf_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

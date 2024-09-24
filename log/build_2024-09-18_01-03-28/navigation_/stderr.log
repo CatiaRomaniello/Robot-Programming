@@ -1,0 +1,119 @@
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:13:9:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   13 |         [01;35m[K"[m[Kodom_subscriber_ = this->create_subscription<nav_msgs::msg::Odometry>(
+      |         [01;35m[K^[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:13:9:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   13 |         [01;31m[K"odom_subscriber_ = this->create_subscription<nav_msgs::msg::Odometry>([m[K
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:14:108:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   14 |             "/odom", 10, std::bind(&TransformBroadcasterNode::odom_callback, this, std::placeholders::_1));[01;35m[K"[m[K
+      |                                                                                                            [01;35m[K^[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:14:108:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:28:5:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   28 |     [01;35m[K"[m[Kvoid odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {
+      |     [01;35m[K^[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:28:5:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+   28 |     [01;31m[K"void odom_callback(const nav_msgs::msg::Odometry::SharedPtr msg) {[m[K
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:41:6:[m[K [01;35m[Kwarning: [m[Kmissing terminating " character
+   41 |     }[01;35m[K"[m[K
+      |      [01;35m[K^[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:41:6:[m[K [01;31m[Kerror: [m[Kmissing terminating " character
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:31:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_base[m[K’ does not name a type
+   31 |         [01;31m[Kodom_to_base[m[K.header.stamp = this->get_clock()->now();
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_base[m[K’ does not name a type
+   32 |         [01;31m[Kodom_to_base[m[K.header.frame_id = "odom";
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:33:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_base[m[K’ does not name a type
+   33 |         [01;31m[Kodom_to_base[m[K.child_frame_id = "base_link";
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:35:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_base[m[K’ does not name a type
+   35 |         [01;31m[Kodom_to_base[m[K.transform.translation.x = msg->pose.pose.position.x;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:36:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_base[m[K’ does not name a type
+   36 |         [01;31m[Kodom_to_base[m[K.transform.translation.y = msg->pose.pose.position.y;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_base[m[K’ does not name a type
+   37 |         [01;31m[Kodom_to_base[m[K.transform.translation.z = msg->pose.pose.position.z;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:38:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_to_base[m[K’ does not name a type
+   38 |         [01;31m[Kodom_to_base[m[K.transform.rotation = msg->pose.pose.orientation;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:40:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster_[m[K’ does not name a type
+   40 |         [01;31m[Kbroadcaster_[m[K->sendTransform(odom_to_base);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:41:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   41 |     }[01;31m[K"[m[K
+      |      [01;31m[K^[m[K
+      |      [32m[K;[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In constructor ‘[01m[KTransformBroadcasterNode::TransformBroadcasterNode()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:10:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster_[m[K’ was not declared in this scope
+   10 |         [01;31m[Kbroadcaster_[m[K = std::make_shared<tf2_ros::TransformBroadcaster>(this);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:14:13:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   14 |             [01;35m[K"/odom"[m[K, 10, std::bind(&TransformBroadcasterNode::odom_callback, this, std::placeholders::_1));"
+      |             [01;35m[K^~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:14:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_callback[m[K’ is not a member of ‘[01m[KTransformBroadcasterNode[m[K’
+   14 |             "/odom", 10, std::bind(&TransformBroadcasterNode::[01;31m[Kodom_callback[m[K, this, std::placeholders::_1));"
+      |                                                               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:16:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_subscriber_[m[K’ was not declared in this scope
+   16 |         [01;31m[Kbase_subscriber_[m[K = this->create_subscription<nav_msgs::msg::Odometry>(
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:17:67:[m[K [01;31m[Kerror: [m[K‘[01m[Kbase_callback[m[K’ is not a member of ‘[01m[KTransformBroadcasterNode[m[K’
+   17 |             "/base_pub", 10, std::bind(&TransformBroadcasterNode::[01;31m[Kbase_callback[m[K, this, std::placeholders::_1));
+      |                                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:20:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   20 |         [01;31m[Ktimer_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Ktimer_t[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:22:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_map_to_odom[m[K’ is not a member of ‘[01m[KTransformBroadcasterNode[m[K’
+   22 |             std::bind(&TransformBroadcasterNode::[01;31m[Kpublish_map_to_odom[m[K, this));
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:24:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_base_to_laser[m[K’ was not declared in this scope
+   24 |         [01;31m[Kpublish_base_to_laser[m[K();
+      |         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In function ‘[01m[Kvoid base_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:45:38:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   45 |         base_to_laser.header.stamp = [01;31m[Kthis[m[K->get_clock()->now();
+      |                                      [01;31m[K^~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:61:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster_[m[K’ was not declared in this scope
+   61 |         [01;31m[Kbroadcaster_[m[K->sendTransform(base_to_laser);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In function ‘[01m[Kvoid publish_map_to_odom()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:67:36:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   67 |         map_to_odom.header.stamp = [01;31m[Kthis[m[K->get_clock()->now();
+      |                                    [01;31m[K^~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:82:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster_[m[K’ was not declared in this scope
+   82 |         [01;31m[Kbroadcaster_[m[K->sendTransform(map_to_odom);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In function ‘[01m[Kvoid publish_base_to_laser()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:88:38:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+   88 |         base_to_laser.header.stamp = [01;31m[Kthis[m[K->get_clock()->now();
+      |                                      [01;31m[K^~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:103:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster_[m[K’ was not declared in this scope
+  103 |         [01;31m[Kbroadcaster_[m[K->sendTransform(base_to_laser);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K In function ‘[01m[Kvoid publish_odom_to_base()[m[K’:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:107:37:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  107 |         odom_to_base.header.stamp = [01;31m[Kthis[m[K->get_clock()->now();
+      |                                     [01;31m[K^~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:112:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kx_[m[K’ was not declared in this scope
+  112 |         odom_to_base.transform.translation.x = [01;31m[Kx_[m[K;
+      |                                                [01;31m[K^~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:113:48:[m[K [01;31m[Kerror: [m[K‘[01m[Ky_[m[K’ was not declared in this scope; did you mean ‘[01m[Kyn[m[K’?
+  113 |         odom_to_base.transform.translation.y = [01;31m[Ky_[m[K;
+      |                                                [01;31m[K^~[m[K
+      |                                                [32m[Kyn[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:116:24:[m[K [01;31m[Kerror: [m[K‘[01m[Ktheta_[m[K’ was not declared in this scope
+  116 |         q.setRPY(0, 0, [01;31m[Ktheta_[m[K);
+      |                        [01;31m[K^~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:122:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kbroadcaster_[m[K’ was not declared in this scope
+  122 |         [01;31m[Kbroadcaster_[m[K->sendTransform(odom_to_base);
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:[m[K At global scope:
+[01m[K/home/catia/ros2_ws/src/navigation_/src/tf_node.cpp:130:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  130 | [01;31m[K}[m[K;
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/tf_node.dir/build.make:76: CMakeFiles/tf_node.dir/src/tf_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/tf_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
