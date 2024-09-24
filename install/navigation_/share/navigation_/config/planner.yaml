@@ -1,7 +1,0 @@
-planner_server:
-  ros__parameters:
-    expected_planner_frequency: 1.0
-    max_planning_retries: 5
-    max_planning_time: 2.0
-    planning_horizon: 10.0
-    use_sim_time: false
