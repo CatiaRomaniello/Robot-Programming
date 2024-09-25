@@ -40,8 +40,7 @@ Run the launch file
 ros2 launch navigation_ mapping_launch.py 
 ```
 and a screen will appear with RVIz and all the nodes already started.
-At this point, you need to set an initial pose by selecting the **2D Pose Estimate
-** button and choosing a point on the map; 
+At this point, you need to set an initial pose by selecting the **2D Pose Estimate** button and choosing a point on the map; 
 the robot will appear at the chosen position. 
 Finally, to see it in motion, you need to choose another point on the map with the **2D Goal** button.
 
