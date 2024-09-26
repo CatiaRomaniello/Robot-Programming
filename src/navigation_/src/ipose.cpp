@@ -12,8 +12,6 @@ public:
             "/initialpose", 10, std::bind(&NavigationNode::initialpose_callback, this, std::placeholders::_1));
         goal_subscription_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "/move_base_simple/goal", 10, std::bind(&NavigationNode::goal_callback, this, std::placeholders::_1));
-
-        RCLCPP_INFO(this->get_logger(), "NavigationNode is ready");
     }
 
 private:

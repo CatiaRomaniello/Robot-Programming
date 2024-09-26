@@ -74,7 +74,7 @@ class MobileBasePublisher : public rclcpp::Node
 
       base_publisher->publish(odom_msg);
 
-      auto transform_stamped = geometry_msgs::msg::TransformStamped();
+      geometry_msgs::msg::TransformStamped transform_stamped;
       transform_stamped.header.stamp = current_time;
       transform_stamped.header.frame_id = "odom";
 
@@ -118,10 +118,10 @@ class MobileBasePublisher : public rclcpp::Node
       marker.scale.y = 0.5;
       marker.scale.z = 0.1; 
 
-      marker.color.a = 1.0;  // Trasparenza
+      marker.color.a = 1.0;  
       marker.color.r = 0.0;
       marker.color.g = 1.0;
-      marker.color.b = 0.0;  // Verde
+      marker.color.b = 0.0;  
 
       marker_publisher->publish(marker);
     }
